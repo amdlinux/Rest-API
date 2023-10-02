@@ -17,4 +17,8 @@ app.use(bodyParser.json());
 
 //instantiating a server
 
-const server = http.createServer()
+const server = http.createServer(app)
+
+server.listen(8080,()=>{
+    console.log("Server running on port 8080")
+});
